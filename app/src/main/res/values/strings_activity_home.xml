@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SecurityLock</string>
+    <string name="add_new_event">Add New Event</string>
+    <string name="options_title">New Event Chooser</string>
+    <string name="current_events">Current Events</string>
+    <string-array name="new_event_options">
+        <item>Brand New Event</item>
+        <item>Event from calendar</item>
+    </string-array>
+</resources>

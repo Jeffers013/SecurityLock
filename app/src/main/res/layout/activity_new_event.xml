@@ -12,6 +12,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
         android:orientation="horizontal">
 
         <TextView
@@ -25,21 +26,77 @@
             android:layout_height="wrap_content"
             android:layout_weight="75" />
     </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
     <LinearLayout
+        android:id="@+id/new_event_start_time"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:clickable="true">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="25"
-            android:text="@string/event_description" />
+            android:text="@string/event_time" />
 
-        <EditText
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/new_event_text_view_start_time_picked"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:id="@+id/new_event_end_time"
+        android:layout_width="fill_parent"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="75" />
+            android:text="@string/event_time" />
+
+        <TextView
+            android:id="@+id/new_event_text_view_end_time_picked"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:id="@+id/new_event_linearlayout_security_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/security_type" />
+
+        <TextView
+            android:id="@+id/new_event_text_view_security_type_picked"
+            android:text="4:00pm"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>

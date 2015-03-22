@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="event_name">Name:</string>
-    <string name="event_description">Description</string>
+    <string name="event_time">Date:</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="security_type">Security Type</string>
+
 </resources>
